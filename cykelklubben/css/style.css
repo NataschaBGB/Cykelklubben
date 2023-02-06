@@ -1,0 +1,186 @@
+/* IMPORTED FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* MOBILE/SMALL SCREEN STYLING */
+@media screen and (max-width: 700px) {
+
+    main {
+        width: 100%;
+    }
+    main .slideshow-container {
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+}
+
+/* IPAD/TABLET STYLING */
+@media screen and (max-width: 1024px) {
+
+    main .forms {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.3rem;
+    }
+
+    /* header .logoutbtn {
+        position: absolute;
+        right: 0;
+    } */
+
+}
+
+/* PC STYLING */
+body {
+    font-family: Roboto;
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* HEADER STYLING */
+header {
+    position: relative;
+    display: flex;
+    border-bottom: 5px solid #f2c94d;
+    margin: 0;
+    padding: 0%;
+    align-items: center;
+}
+
+/* header logo */
+header img {
+    height: 7rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* header links */
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+/* when hovering over links */
+header nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* logout btn styling */
+header .logoutbtn {
+    /* position: absolute;
+    right: 100; */
+    height: 30px;
+    width: 8rem;
+    background-color: #2f80ed;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+header .logoutbtn:hover {
+    text-decoration: none;
+}
+
+/* FOOTER STYLING */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f2c94d;
+}
+
+/* MAIN STYLING */
+main h1 {
+    text-align: center;
+    margin: 35px;
+}
+
+/* slideshow styling */
+main .slideshow-container {
+    height: 600px;
+    border: 2px solid #f2c94d;
+}
+
+/* img inside slideshow */
+main .slideshow-container .mySlides img {
+    height: 600px;
+    object-fit: cover;
+}
+
+/* forms for login and signup */
+main .forms {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.3rem;
+}
+
+main .forms .edit, main .forms .photo, main .forms .login, main .forms .newuser {
+    margin: 20px;
+    /* position to place button in login and new user forms */
+    position: relative;
+}
+
+main .forms h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main .forms .inputs, main .edit .inputs, main .photo .inputs {
+    display: flex;
+    padding: 5px;
+}
+
+main .forms .inputs label {
+    width: 100px;
+    font-size: large;
+}
+
+/* user inputs styling */
+main .forms .inputs .input input {
+    height: 30px;
+    width: 20rem;
+}
+
+main .forms button {
+    /* button position inside log in and new user forms */
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 8rem;
+    background-color: #2f80ed;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* member area user photos styling */
+main .userphotos h2 {
+    text-align: center;
+}
+
+main .photos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+main .userphotos img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
